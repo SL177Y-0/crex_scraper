@@ -1,0 +1,10 @@
+fastapi
+uvicorn
+requests
+beautifulsoup4
+selenium
+celery
+redis
+sqlalchemy
+psycopg2-binary==2.9.10
+
