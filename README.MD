@@ -11,6 +11,9 @@ This project is a real-time cricket data scraping system that monitors upcoming 
 - **Robust Backend:** Developed with FastAPI and SQLAlchemy with PostgreSQL.
 - **Containerized Deployment:** Uses Docker and Docker Compose for easy setup.
 
+## Project Structure
+
+```plaintext
 crex_scraper/
 ├── backend/                         # Backend service (FastAPI, Celery, DB connection, etc.)
 │   ├── Dockerfile                   # Builds the backend container image
@@ -40,9 +43,6 @@ crex_scraper/
 ├── docker-compose.yml               # Orchestrates backend, frontend, PostgreSQL, and Redis containers
 └── README.md                        # Project documentation and setup instructions
 
-crex_scraper/ ├── backend/ # Backend service (FastAPI, Celery, DB connection, etc.) │ ├── Dockerfile # Builds the backend container image │ ├── requirements.txt # Python dependencies (FastAPI, Celery, etc.) │ ├── main.py # FastAPI application entry point │ ├── scraper.py # Web scraping logic for cricket data │ ├── scheduler.py # Celery tasks & scheduler for real-time scraping │ ├── database.py # Database connection and setup (SQLAlchemy) │ ├── models.py # Database models (e.g., Match model) │ └── utils.py # Utility functions (e.g., logging setup) │ ├── frontend/ # Frontend service (Next.js app) │ ├── Dockerfile # Builds the frontend container image │ ├── package.json # Node.js dependencies and build scripts │ └── src/
-│ ├── pages/ # Next.js pages │ │ ├── index.tsx # Home page: displays match list/dashboard │ │ └── match/
-│ │ └── [id].tsx # Dynamic match detail page with tabs │ └── components/ # Reusable React components │ ├── MatchCard.tsx # Animated match card component │ └── LiveScore.tsx # Live score update component (WebSocket) │ ├── db/ # Database initialization scripts │ └── init.sql # SQL script to create tables and initialize schema │ ├── docker-compose.yml # Orchestrates backend, frontend, PostgreSQL, and Redis containers └── README.md # Project documentation and setup instructions
 ## Setup Instructions
 
 ### Prerequisites
