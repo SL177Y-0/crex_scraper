@@ -11,32 +11,34 @@ This project is a real-time cricket data scraping system that monitors upcoming 
 - **Robust Backend:** Developed with FastAPI and SQLAlchemy with PostgreSQL.
 - **Containerized Deployment:** Uses Docker and Docker Compose for easy setup.
 
-## Project Structure
-
 crex_scraper/
-│── backend/
-│   │── Dockerfile
-│   │── requirements.txt
-│   │── main.py            
-│   │── scraper.py         
-│   │── scheduler.py     
-│   │── database.py        
-│   │── models.py          
-│   │── utils.py           
-│── frontend/
-│   │── Dockerfile
-│   │── package.json       
-│   │── src/pages
-│   │         │── index.tsx      
-│   │   │── match/
-│   │         │── [id].tsx 
-│   |   │── components/
-│   │         │── MatchCard.tsx  
-│   │         │── LiveScore.tsx  
-│── db/
-│   │── init.sql           
-│── docker-compose.yml     
-│── README.md             
+├── backend/                         
+│   ├── Dockerfile                   
+│   ├── requirements.txt             
+│   ├── main.py                      
+│   ├── scraper.py                   
+│   ├── scheduler.py                 
+│   ├── database.py                  
+│   ├── models.py                    
+│   └── utils.py                    
+│
+├── frontend/                        
+│   ├── Dockerfile                  
+│   ├── package.json                 
+│   └── src/                         
+│       ├── pages/                   
+│       │   ├── index.tsx            
+│       │   └── match/               
+│       │       └── [id].tsx         
+│       └── components/              
+│           ├── MatchCard.tsx        
+│           └── LiveScore.tsx        
+│
+├── db/                              
+│   └── init.sql                     
+│
+├── docker-compose.yml               
+└── README.md                        
 
 
 ## Setup Instructions
