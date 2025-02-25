@@ -12,33 +12,33 @@ This project is a real-time cricket data scraping system that monitors upcoming 
 - **Containerized Deployment:** Uses Docker and Docker Compose for easy setup.
 
 crex_scraper/
-├── backend/                         
-│   ├── Dockerfile                   
-│   ├── requirements.txt             
-│   ├── main.py                      
-│   ├── scraper.py                   
-│   ├── scheduler.py                 
-│   ├── database.py                  
-│   ├── models.py                    
-│   └── utils.py                    
+├── backend/                         # Backend service (FastAPI, Celery, DB connection, etc.)
+│   ├── Dockerfile                   # Builds the backend container image
+│   ├── requirements.txt             # Python dependencies (FastAPI, Celery, etc.)
+│   ├── main.py                      # FastAPI application entry point
+│   ├── scraper.py                   # Web scraping logic for cricket data
+│   ├── scheduler.py                 # Celery tasks & scheduler for real-time scraping
+│   ├── database.py                  # Database connection and setup (SQLAlchemy)
+│   ├── models.py                    # Database models (e.g., Match model)
+│   └── utils.py                     # Utility functions (e.g., logging setup)
 │
-├── frontend/                        
-│   ├── Dockerfile                  
-│   ├── package.json                 
+├── frontend/                        # Frontend service (Next.js app)
+│   ├── Dockerfile                   # Builds the frontend container image
+│   ├── package.json                 # Node.js dependencies and build scripts
 │   └── src/                         
-│       ├── pages/                   
-│       │   ├── index.tsx            
+│       ├── pages/                   # Next.js pages
+│       │   ├── index.tsx            # Home page: displays match list/dashboard
 │       │   └── match/               
-│       │       └── [id].tsx         
-│       └── components/              
-│           ├── MatchCard.tsx        
-│           └── LiveScore.tsx        
+│       │       └── [id].tsx         # Dynamic match detail page with tabs
+│       └── components/              # Reusable React components
+│           ├── MatchCard.tsx        # Animated match card component
+│           └── LiveScore.tsx        # Live score update component (WebSocket)
 │
-├── db/                              
-│   └── init.sql                     
+├── db/                              # Database initialization scripts
+│   └── init.sql                     # SQL script to create tables and initialize schema
 │
-├── docker-compose.yml               
-└── README.md                        
+├── docker-compose.yml               # Orchestrates backend, frontend, PostgreSQL, and Redis containers
+└── README.md                        # Project documentation and setup instructions
 
 
 ## Setup Instructions
