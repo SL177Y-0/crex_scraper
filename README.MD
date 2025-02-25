@@ -132,19 +132,20 @@ This stops and removes all running containers.
 
 ➡️ Backend
 
-bash
+```plaintext
 Copy
 Edit
 cd backend
 pip install -r requirements.txt
 uvicorn main:app --reload
 By default, FastAPI runs on http://127.0.0.1:8000.
-
+```
 
 
 
 ➡️ Frontend
 
+```plaintext
 bash
 Copy
 Edit
@@ -152,7 +153,7 @@ cd frontend
 npm install
 npm run dev
 Next.js will start on http://127.0.0.1:3000.
-
+```
 
 
 ⚠️ If not using Docker, make sure PostgreSQL and Redis are running manually.
