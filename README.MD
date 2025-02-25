@@ -43,18 +43,22 @@ crex_scraper/
 └── README.md                        # Project documentation and setup instructions
 ```
 
-##🚀 Features
+
+🚀 Features
 ✅ Scrape Match Schedules – Automatically fetch upcoming match schedules from CREX.
 ✅ Detailed Match Data – Extract data from "Match Info," "Squads," "Live," and "Scorecard."
 ✅ Real-time Updates – Celery tasks trigger scrapes when a match starts, fetching live data.
 ✅ Interactive UI – A sleek Next.js dashboard with animations and hover effects.
 ✅ Containerized Deployment – Easily deploy using Docker & Docker Compose.
 
+
 ⚙️ ##Prerequisites
 Docker & Docker Compose (Recommended for easy setup)
 Git (Optional, for cloning the repository)
 Node.js (18+) (For frontend local development if not using Docker)
 Python 3.8+ & pip (For backend local development if not using Docker)
+
+                   
 🛠 Setup Instructions
 🔹 1. Clone the Repository (Optional)
 bash
@@ -69,18 +73,24 @@ bash
 Copy
 Edit
 docker-compose up --build
+                   
 This will: ✅ Build the backend (FastAPI) and frontend (Next.js) images.
+                   
 ✅ Start the services:
 
 Backend (FastAPI): http://localhost:8000
 Frontend (Next.js): http://localhost:3000
 PostgreSQL: localhost:5432
 Redis: localhost:6379
+
+                   
 🔹 3. Verify the Services
 Frontend: Open http://localhost:3000 in your browser.
 Backend API: Check http://localhost:8000 for the FastAPI welcome page.
 Database: Confirm PostgreSQL is running via a client or Docker logs.
 Redis: Ensure Redis is running for Celery task management.
+
+                
 🔹 4. Database Initialization
 If the database needs initialization, run:
 
@@ -90,6 +100,7 @@ Edit
 psql -U user -d matches -f db/init.sql
 Replace user and matches with your database credentials from docker-compose.yml.
 
+                   
 🔹 5. Stopping the Containers
 Press Ctrl + C in the terminal where docker-compose up is running, then execute:
 
