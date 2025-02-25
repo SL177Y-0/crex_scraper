@@ -42,9 +42,7 @@ crex_scraper/
 │
 ├── docker-compose.yml               # Orchestrates backend, frontend, PostgreSQL, and Redis containers
 └── README.md                        # Project documentation and setup instructions
-
----
-
+'''
 ## Setup Instructions
 
 ### Prerequisites
