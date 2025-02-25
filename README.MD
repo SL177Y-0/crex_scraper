@@ -69,25 +69,6 @@ Python 3.8+ & pip (For backend local development if not using Docker)
                    
 ## 🛠 Setup Instructions
 
-🔹 1. Clone the Repository (Optional)
-
-bash
-Copy
-Edit
-git clone https://github.com/SL177Y/crex_scraper.git
-cd crex_scraper
-
-🔹 2. Build & Start the Containers (Docker)
-Run the following command from the project root:
-
-bash
-Copy
-Edit
-docker-compose up --build
-                   
-This will: ✅ Build the backend (FastAPI) and frontend (Next.js) images.
-                   
-
 ✅ Start the services:
 
 Backend (FastAPI): http://localhost:8000
@@ -95,40 +76,7 @@ Frontend (Next.js): http://localhost:3000
 PostgreSQL: localhost:5432
 Redis: localhost:6379
 
-
-                   
-🔹 3. Verify the Services
-Frontend: Open http://localhost:3000 in your browser.
-Backend API: Check http://localhost:8000 for the FastAPI welcome page.
-Database: Confirm PostgreSQL is running via a client or Docker logs.
-Redis: Ensure Redis is running for Celery task management.
-
-
-                
-🔹 4. Database Initialization
-If the database needs initialization, run:
-
-bash
-Copy
-Edit
-psql -U user -d matches -f db/init.sql
-Replace user and matches with your database credentials from docker-compose.yml.
-
-  
-                 
-🔹 5. Stopping the Containers
-Press Ctrl + C in the terminal where docker-compose up is running, then execute:
-
-bash
-Copy
-Edit
-docker-compose down
-This stops and removes all running containers.
-
-
-
 🖥️ Local Development (Without Docker)
-
 
 ➡️ Backend
 
