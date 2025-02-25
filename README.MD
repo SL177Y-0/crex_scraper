@@ -72,8 +72,11 @@ Python 3.8+ & pip (For backend local development if not using Docker)
 ✅ Start the services:
 
 Backend (FastAPI): http://localhost:8000
+                   
 Frontend (Next.js): http://localhost:3000
+
 PostgreSQL: localhost:5432
+
 Redis: localhost:6379
 
 🖥️ Local Development (Without Docker)
