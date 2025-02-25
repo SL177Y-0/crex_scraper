@@ -84,8 +84,7 @@ Redis: localhost:6379
 ➡️ Backend
 
 ```plaintext
-Copy
-Edit
+                   
 cd backend
 pip install -r requirements.txt
 uvicorn main:app --reload
@@ -97,9 +96,7 @@ By default, FastAPI runs on http://127.0.0.1:8000.
 ➡️ Frontend
 
 ```plaintext
-bash
-Copy
-Edit
+                   
 cd frontend
 npm install
 npm run dev
