@@ -44,7 +44,8 @@ crex_scraper/
 ```
 
 
-🚀 Features
+## 🚀 Features
+
 ✅ Scrape Match Schedules – Automatically fetch upcoming match schedules from CREX.
 ✅ Detailed Match Data – Extract data from "Match Info," "Squads," "Live," and "Scorecard."
 ✅ Real-time Updates – Celery tasks trigger scrapes when a match starts, fetching live data.
@@ -52,14 +53,14 @@ crex_scraper/
 ✅ Containerized Deployment – Easily deploy using Docker & Docker Compose.
 
 
-⚙️ ##Prerequisites
+## ⚙️ Prerequisites
 Docker & Docker Compose (Recommended for easy setup)
 Git (Optional, for cloning the repository)
 Node.js (18+) (For frontend local development if not using Docker)
 Python 3.8+ & pip (For backend local development if not using Docker)
 
                    
-🛠 Setup Instructions
+## 🛠 Setup Instructions
 🔹 1. Clone the Repository (Optional)
 bash
 Copy
@@ -76,7 +77,7 @@ docker-compose up --build
                    
 This will: ✅ Build the backend (FastAPI) and frontend (Next.js) images.
                    
-✅ Start the services:
+## ✅ Start the services:
 
 Backend (FastAPI): http://localhost:8000
 Frontend (Next.js): http://localhost:3000
